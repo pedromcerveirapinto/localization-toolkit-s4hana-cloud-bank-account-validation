@@ -5,7 +5,9 @@
 * [Subscribe](https://help.sap.com/docs/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/6331319fd9ea4f0ea5331e21df329539.html) the Business Application Studio and make sure that all [necessary roles](https://help.sap.com/docs/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/01e69c53003c4b0a8a64310a3f08867d.html) are added to your user. 
 * Run the BAS and create a space for Full Stack Cloud Application development
 * Within your development space, [clone] the (https://github.com/SAP-samples/localization-toolkit-s4hana-cloud-bank-account-validation). 
-* The repository contains an example manifest_bas.yml. Edit it and replace the name = _<app_name>_ with a value, that is likely to be unique, e.g. name = my_company_com_pl_whitelist
+* The repository contains an example manifest_bas.yml. Edit it and replace the name = _<app_name>_ with a value, that is likely to be unique, e.g. name = my-company-com-pl-whitelist
+* Please be aware that underscores are not allowed as host names (The underscore is not allowed in hostname, as per the restrictions of RFC 952 and RFC 1123.)
+* This is also described in OSS Note 3317137 - Cloud Integration hostname contains underscore
 * Open the teminal using the main menu -> View -> Teminal
 * In the terminal, change the working directory to the app home e.g. using the command `cd ~/projects/localization-toolkit-s4hana-cloud-bank-account-validation/`
 * Execute the installation script using the command `sh install.sh` 
